@@ -1,0 +1,42 @@
+@media (min-width: $mobile) {
+  .partner-wrapper {
+    padding-top: 40px;
+  }
+  .partner-card {
+    min-height: 135px;
+    margin-bottom: 35px;
+  }
+  .partner-title {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .partner-img {
+    display: block;
+    height: 135px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 135px;
+
+    & > img {
+      display: inline-block;
+    }
+  }
+  .partner-name {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+  }
+}
+@media (min-width: $pc) {
+  .partner-wrapper {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  
+}

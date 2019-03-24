@@ -1,0 +1,128 @@
+@media (min-width: $mobile) {
+  .how-to-pay__content-wrapper {
+    display: none;
+  }
+  .how-to-pay__link-container-opened+.how-to-pay__content-wrapper {
+    display: block;
+  }
+  .how-to-pay {
+    padding-top: 35px;
+    & p {
+      margin-bottom: 20px;
+    }
+    &__title {
+      padding: 0 15px;
+      text-align: center;
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 30px;
+    }
+    &__link-container {
+      position: relative;
+      min-height: 59px;
+      padding-top: 22px;
+      padding-bottom: 20px;
+      padding-left: 65px;
+      padding-right: 10px;
+      margin-bottom: 3px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &-penalty::before {
+        width: 34px;
+        height: 36px;
+        left: 11px;
+        background-image: url(../img/1link.png);
+      }
+      &-duty::before {
+        width: 30px;
+        height: 28px;
+        left: 9px;
+        background-image: url(../img/2link.png);
+      }
+      &-backlog::before {
+        width: 39px;
+        height: 35px;
+        left: 5px;
+        background-image: url(../img/3link.png);
+      }
+      &-tax::before {
+        width: 35px;
+        height: 38px;
+        left: 8px;
+        background-image: url(../img/4link.png);
+      }
+      &-rosreest::before {
+        width: 34px;
+        height: 38px;
+        left: 8px;
+        background-image: url(../img/5link.png);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: 1px;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 7px solid $blue;
+      }
+      &-opened::after {
+        transform: rotate(180deg);
+      }
+    }
+    &__link {
+      color: $blue;
+      border-bottom: 1px dotted $blue;
+    }
+    &__content {
+      padding-bottom: 15px;
+    }
+  }
+}
+@media (min-width: $pc) {
+  .row-article-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid $gray;
+  }
+  .row-link-list {
+    margin-bottom: 15px;
+  }
+  .how-to-pay {
+    padding-top: 50px;
+    padding-bottom: 65px;
+    & p {
+      font-size: 15px;
+      line-height: 21px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      text-align: center;
+    }
+    &__link {
+      font-size: 18px;
+      line-height: 18px;
+      &-disabled {
+        color: black;
+        border: none;
+      }
+    }
+    &__article-title {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    &__content-wrapper {
+      display: block;
+    }
+    &__article-title-link {
+      color: $blue;
+      border-bottom: 1px solid $blue;
+    }
+  }
+}

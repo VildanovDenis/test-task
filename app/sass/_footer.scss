@@ -1,0 +1,65 @@
+@media (min-width: $mobile) {
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: lighten($gray, 30%);
+  }
+  .copyright {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .comodo {
+    display: block;
+    width: 79px;
+    margin: 0 auto;
+  }
+  .mobile-footer {
+    position: relative;
+  }
+  .share-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    width: 20px;
+    height: 22px;
+    background-image: url(../img/share.png);
+  }
+}
+@media (min-width: $pc) {
+  .footer {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    &__list-item {
+      margin-bottom: 15px;
+    }
+    &__link {
+      color: $blue;
+      text-decoration: underline;
+      &-phone {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+  .phone-info {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .comodo {
+    margin: 0;
+    margin-top: 60px;
+  }
+  .copyright {
+    text-align: left;
+    line-height: 21px;
+  }
+  .copyright-right {
+    text-align: right;
+  }
+}

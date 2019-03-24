@@ -1,0 +1,68 @@
+@media (min-width: $mobile) {
+  .header {
+    background-color: white;
+  }
+  .row--header {
+    padding-top: 5px;
+    padding-bottom: 6px;
+  }
+  .hamburger-container {
+    &__icon {
+      position: relative;
+      display: block;
+      width: 19px;
+      height: 3px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      background-color: $blue;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        width: 100%;
+        height: 3px;
+        background-color: $blue;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        width: 100%;
+        height: 3px;
+        background-color: $blue;
+      }
+    }
+  }
+}
+@media (min-width: $pc) {
+  .row--header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .header__service-list {
+    position: relative;
+    display: inline-block;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+    font-size: 15px;
+    line-height: 15px;
+    color: darken($blue, 15%);
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 0px;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid darken($blue, 15%);
+    }
+  }
+  .user-office {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 15px;
+    color: darken($blue, 15%);
+    border: 2px solid darken($blue, 15%);
+  }
+}

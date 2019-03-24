@@ -1,0 +1,55 @@
+$font: 'PT Sans Caption', sans-serif;
+$blue: #0777ba;
+$darkblue: #004686;
+$gray: #969696;
+$red: #d30531;
+$refular: 400;
+$mobile: 320px;
+$pc: 992px;
+
+.container {
+  max-width: 1199px;
+}
+.fixed {
+  position: fixed;
+}
+.gray-border-bottom {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid $gray;
+}
+.red-title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $red;
+}
+
+
+body {
+  padding-top: 40px;
+  font-weight: $refular;
+  font-family: $font !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}

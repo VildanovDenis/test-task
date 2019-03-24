@@ -1,0 +1,64 @@
+@media (min-width: $mobile) {
+  .search {
+    background-image: url(../img/search-bg-mob.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    &__title {
+      margin-bottom: 25px;
+      font-size: 21px;
+      line-height: 21px;
+      color: white;
+    }
+    &__form {
+      position: relative;
+    }
+    &__input {
+      width: 100%;
+      padding: 18px 32px 18px 15px;
+      border: none;
+      font-size: 15px;
+      line-height: 15px;
+      color: $gray;
+      box-shadow: inset 0px 4px 5px 0px rgba(0,0,0,0.34);
+      &-icon {
+        content: "";
+        top: 50%;
+        right: 9px;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        background-image: url(../img/search-icon.png);
+      }
+    }
+  }
+}
+@media (min-width: $pc) {
+  .search {
+    padding-top: 110px;
+    padding-bottom: 145px;
+    background-image: url(../img/search-bg.jpg);
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+    }
+    &__input {
+      width: 85%;
+      padding: 22px 23px 23px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+    &__button {
+      width: 14%;
+      padding: 23px;
+      font-size: 18px;
+      line-height: 18px;
+      color: white;
+      background-color: $red;
+      border: 2px solid $red;
+    }
+  }
+}
