@@ -12,7 +12,7 @@ var gulp       = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
-    return gulp.src('app/sass/**/*.sass')
+    return gulp.src('app/sass/**/*.scss')
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
@@ -90,7 +90,7 @@ gulp.task('clear', function (callback) {
 })
 
 gulp.task('watch', function() {
-    gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'));
+    gulp.watch('app/sass/**/*.scss', gulp.parallel('sass'));
     gulp.watch('app/*.html', gulp.parallel('code'));
     gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
 });
